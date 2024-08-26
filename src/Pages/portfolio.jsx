@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Portfolio.css';
+import '/home/Engineernoob/Personal-Portfolio/src/Styles/portfolio.css';
 
 const Portfolio = () => {
   const projects = [

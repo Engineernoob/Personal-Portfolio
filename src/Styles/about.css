@@ -1,0 +1,109 @@
+/* Terminal style for About Page */
+.terminal {
+    background-color: #1e1e1e;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .terminal p {
+    margin: 0.5rem 0;
+  }
+  
+  .user {
+    color: #00f;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-grid .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill p {
+    margin-top: 0.5rem;
+  }
+  
+  .skill a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Interests Section */
+  .interests {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .interests ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .interests li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .interests li:hover {
+    color: #0077b5; /* Adjust to a color that fits your design */
+  }
+  
+  /* General Section Styling */
+  .about {
+    padding: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-grid .skills {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+  
+    .skill img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .interests ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .interests li {
+      margin: 0.5rem 0;
+    }
+  }

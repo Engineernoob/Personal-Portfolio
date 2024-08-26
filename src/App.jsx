@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Updated to use Routes
-import Header from './components/Header';
-import Home from './pages/Home';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
+import Header from './Components/Header';
+import Home from './Pages/Home';
+import About from './Pages/about';
+import Portfolio from './Pages/portfolio';
 import './index.css';
 
 function App() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/About.css';
+import '../Styles/about.css';
 
 const About = () => {
   const skills = [
@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="terminal">
-        <p><span className="user">taahirah</span> $ cat about/taahirah</p>
+        <p><span className="user">taahirah</span> $about/taahirah</p>
         <p>Hello! I'm Taahirah. I'm a software developer with a passion for AI and web development. I studied Computer Science and have worked on various exciting projects. Let's connect!</p>
       </div>
 
