@@ -3,14 +3,14 @@ import React from 'react';
 const About = () => {
   // Define the skills and tools you want to showcase
   const skills = [
-    { name: 'JavaScript', icon: 'path-to-js-icon.png' },
-    { name: 'React', icon: 'path-to-react-icon.png' },
-    { name: 'HTML5', icon: 'path-to-html5-icon.png' },
-    { name: 'CSS3', icon: 'path-to-css3-icon.png' },
-    { name: 'Git', icon: 'path-to-git-icon.png' },
-    { name: 'GitHub', icon: 'path-to-github-icon.png' },
-    { name: 'Node.js', icon: 'path-to-nodejs-icon.png' },
-    { name: 'Python', icon: 'path-to-python-icon.png' },
+    { name: 'JavaScript', icon: 'path-to-js-icon.png', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+    { name: 'React', icon: 'path-to-react-icon.png', link: 'https://reactjs.org/' },
+    { name: 'HTML5', icon: 'path-to-html5-icon.png', link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' },
+    { name: 'CSS3', icon: 'path-to-css3-icon.png', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'Git', icon: 'path-to-git-icon.png', link: 'https://git-scm.com/' },
+    { name: 'GitHub', icon: 'path-to-github-icon.png', link: 'https://github.com/' },
+    { name: 'Node.js', icon: 'path-to-nodejs-icon.png', link: 'https://nodejs.org/' },
+    { name: 'Python', icon: 'path-to-python-icon.png', link: 'https://www.python.org/' },
   ];
 
   return (
@@ -28,8 +28,10 @@ const About = () => {
         <div className="skills">
           {skills.map((skill, index) => (
             <div key={index} className="skill">
-              <img src={skill.icon} alt={skill.name} />
-              <p>{skill.name}</p>
+              <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                <img src={skill.icon} alt={skill.name} />
+                <p>{skill.name}</p>
+              </a>
             </div>
           ))}
         </div>
