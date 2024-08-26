@@ -3,14 +3,14 @@ import '../Styles/about.css';
 
 const About = () => {
   const skills = [
-    { name: 'JavaScript', icon: 'path-to-js-icon.png', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-    { name: 'React', icon: 'path-to-react-icon.png', link: 'https://reactjs.org/' },
-    { name: 'HTML5', icon: 'path-to-html5-icon.png', link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' },
-    { name: 'CSS3', icon: 'path-to-css3-icon.png', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-    { name: 'Git', icon: 'path-to-git-icon.png', link: 'https://git-scm.com/' },
-    { name: 'GitHub', icon: 'path-to-github-icon.png', link: 'https://github.com/' },
-    { name: 'Node.js', icon: 'path-to-nodejs-icon.png', link: 'https://nodejs.org/' },
-    { name: 'Python', icon: 'path-to-python-icon.png', link: 'https://www.python.org/' },
+    { name: 'JavaScript', icon: 'src/assets/Images/Js-logo.png', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+    { name: 'React', icon: 'src/assets/Images/React logo.png', link: 'https://reactjs.org/' },
+    { name: 'HTML5', icon: 'src/assets/Images/HTML5 logo and wordmark.png', link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' },
+    { name: 'CSS3', icon: 'src/assets/Images/CSS3 Logo Blue.png', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'Git', icon: 'src/assets/Images/Git Logo 2Color.png', link: 'https://git-scm.com/' },
+    { name: 'GitHub', icon: 'src/assets/Images/Github logo monochrome.png', link: 'https://github.com/' },
+    { name: 'Node.js', icon: 'src/assets/Images/Node.js logo.png', link: 'https://nodejs.org/' },
+    { name: 'Python', icon: 'src/assets/Images/Python logo thumbnail.png', link: 'https://www.python.org/' },
   ];
 
   return (
