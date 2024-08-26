@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './index.css'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -26,9 +26,9 @@ const Header = () => {
     <header>
       <nav>
         <ul>
-          <li className={activeSection === 'home' ? 'active' : ''}><a href="#home">home</a></li>
-          <li className={activeSection === 'about' ? 'active' : ''}><a href="#about">about me</a></li> {/* Link to #about */}
-          <li className={activeSection === 'portfolio' ? 'active' : ''}><a href="#portfolio">portfolio</a></li> {/* Link to #portfolio */}
+          <li className={activeSection === 'home' ? 'active' : ''}><Link to="/">home</Link></li>
+          <li className={activeSection === 'about' ? 'active' : ''}><Link to="/about">about me</Link></li>
+          <li className={activeSection === 'portfolio' ? 'active' : ''}><Link to="/portfolio">portfolio</Link></li>
         </ul>
       </nav>
       <div className="logo">js</div>
