@@ -6,8 +6,8 @@
   padding: 1.5rem;
   margin-bottom: 3rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Adding subtle shadow */
-  border: 1px solid #333;  /* Adding a border to make the terminal more distinct */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #333;
   max-width: 800px;
   margin: 0 auto 3rem;
 }
@@ -22,62 +22,36 @@
 
 /* Skills Grid */
 .skills-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;  /* Increased gap for better spacing */
-  margin-bottom: 3rem;
+  margin: 2rem 0;
+  padding-left: 1rem; /* Adds a bit of padding to align with the terminal look */
 }
 
-.skills-grid .skills {
+.skills-category {
+  color: #39ff14;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.skills-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  /* Adjusted min width */
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.skill {
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 1rem;
-  border-radius: 8px;  /* Adding rounded corners */
-}
-
-.skill img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 0.8rem;
-}
-
-.skill p {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2rem; /* Adjust the gaps for spacing */
   margin-top: 0.5rem;
-  font-size: 1.1rem;  /* Slightly larger font for better readability */
 }
 
-.skill a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.skill:hover {
-  transform: scale(1.08);  /* Slightly more pronounced zoom */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #f4f4f4;  /* Adding a subtle background color change on hover */
+.skills-list p {
+  margin: 0;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Interests Section */
-.interests {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .interests ul {
   list-style-type: none;
   padding-left: 0;
   display: flex;
   justify-content: space-around;
-  gap: 1.5rem;  /* Add gap between list items */
+  gap: 1.5rem;
 }
 
 .interests li {
@@ -87,26 +61,21 @@
 }
 
 .interests li:hover {
-  color: #0077b5; /* Highlight color */
-  transform: scale(1.05);  /* Slight zoom on hover */
+  color: #0077b5;
+  transform: scale(1.05);
 }
 
 /* General Section Styling */
 .about {
   padding: 3rem 2rem;
-  background-color: #f9f9f9;  /* Light background color for the about section */
-  border-radius: 8px;  /* Rounded corners for the section */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Adding a subtle shadow */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-  .skills-grid .skills {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  /* Adjusting for smaller screens */
-  }
-
-  .skill img {
-    width: 50px;
-    height: 50px;
+  .skills-list {
+    grid-template-columns: repeat(1, 1fr); /* Stack skills on smaller screens */
   }
 
   .interests ul {
