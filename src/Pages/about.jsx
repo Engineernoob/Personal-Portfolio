@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/About.css';
+import '../Styles/about.css';
 
 const About = () => {
   const proficientSkills = [
@@ -11,24 +11,35 @@ const About = () => {
     'HTML5',
     'CSS3',
     'Figma',
+    'Python'
   ];
 
   const exposedSkills = [
     'Node.js',
-    'Python',
-    'Adobe Illustrator',
+    'Java',
+    'TensorFlow',
   ];
 
   return (
     <section id="about" className="about">
       {/* About Me Terminal-style description */}
       <div className="terminal">
+      <div className="terminal-header">
+          <div className="button red"></div>
+          <div className="button yellow"></div>
+          <div className="button green"></div>
+        </div>
         <p><span className="user">taahirah</span> $ cat about/taahirah</p>
         <p>Hello! I'm Taahirah. I'm a software developer with a passion for AI and web development. I studied Computer Science and have worked on various exciting projects. Let's connect!</p>
       </div>
 
       {/* Skills/Tools Terminal */}
       <div className="terminal">
+      <div className="terminal-header">
+          <div className="button red"></div>
+          <div className="button yellow"></div>
+          <div className="button green"></div>
+        </div>
         <p><span className="user">taahirah</span> $ cd skills/tools</p>
         <p><span className="user">taahirah</span> $ ls</p>
         <div className="skills-grid">
@@ -49,6 +60,11 @@ const About = () => {
 
       {/* Hobbies/Interests Terminal */}
       <div className="terminal">
+      <div className="terminal-header">
+          <div className="button red"></div>
+          <div className="button yellow"></div>
+          <div className="button green"></div>
+        </div>
         <p><span className="user">taahirah</span> $ cd hobbies/interests</p>
         <p><span className="user">taahirah</span> $ ls</p>
         <div className="interests">
