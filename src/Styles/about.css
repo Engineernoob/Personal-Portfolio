@@ -1,109 +1,120 @@
 /* Terminal style for About Page */
 .terminal {
-    background-color: #1e1e1e;
-    color: #39ff14;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-  }
-  
-  .terminal p {
-    margin: 0.5rem 0;
-  }
-  
-  .user {
-    color: #00f;
-  }
-  
-  /* Skills Grid */
-  .skills-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-  
+  background-color: #1e1e1e;
+  color: #39ff14;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Adding subtle shadow */
+  border: 1px solid #333;  /* Adding a border to make the terminal more distinct */
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.terminal p {
+  margin: 0.8rem 0;
+}
+
+.user {
+  color: #00f;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;  /* Increased gap for better spacing */
+  margin-bottom: 3rem;
+}
+
+.skills-grid .skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  /* Adjusted min width */
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  border-radius: 8px;  /* Adding rounded corners */
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.8rem;
+}
+
+.skill p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;  /* Slightly larger font for better readability */
+}
+
+.skill a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.skill:hover {
+  transform: scale(1.08);  /* Slightly more pronounced zoom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;  /* Adding a subtle background color change on hover */
+}
+
+/* Interests Section */
+.interests {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interests ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;  /* Add gap between list items */
+}
+
+.interests li {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.interests li:hover {
+  color: #0077b5; /* Highlight color */
+  transform: scale(1.05);  /* Slight zoom on hover */
+}
+
+/* General Section Styling */
+.about {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;  /* Light background color for the about section */
+  border-radius: 8px;  /* Rounded corners for the section */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Adding a subtle shadow */
+}
+
+@media (max-width: 768px) {
   .skills-grid .skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  /* Adjusting for smaller screens */
   }
-  
-  .skill {
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+
   .skill img {
     width: 50px;
     height: 50px;
-    margin-bottom: 0.5rem;
   }
-  
-  .skill p {
-    margin-top: 0.5rem;
-  }
-  
-  .skill a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .skill:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Interests Section */
-  .interests {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
+
   .interests ul {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .interests li {
-    font-size: 1.2rem;
     margin: 0.5rem 0;
-    transition: color 0.3s ease;
   }
-  
-  .interests li:hover {
-    color: #0077b5; /* Adjust to a color that fits your design */
-  }
-  
-  /* General Section Styling */
-  .about {
-    padding: 2rem;
-  }
-  
-  @media (max-width: 768px) {
-    .skills-grid .skills {
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    }
-  
-    .skill img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .interests ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .interests li {
-      margin: 0.5rem 0;
-    }
-  }
+}
