@@ -31,7 +31,7 @@ const Header = () => {
           <li className={activeSection === 'portfolio' ? 'active' : ''}><Link to="/portfolio">portfolio</Link></li>
         </ul>
       </nav>
-      <div className="logo">js</div>
+      <div className="logo">td</div>
     </header>
   );
 };
