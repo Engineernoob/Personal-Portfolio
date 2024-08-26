@@ -1,4 +1,3 @@
-jsx
 import React from 'react';
 import '/home/Engineernoob/Personal-Portfolio/src/portfolio.css';
 
