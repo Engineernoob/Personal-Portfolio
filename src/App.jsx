@@ -1,20 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Components/Header'
-import About from './Components/AboutSection';
-import Portfolio from './Components/Portfolio';
-import './index.css';  // Global styles
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Updated to use Routes
+import Header from './components/Header';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import './index.css';
 
 function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-
-      </Switch>
+      <Routes> {/* Updated from Switch to Routes */}
+        <Route path="/" element={<Home />} /> {/* Updated to use element instead of component */}
+        <Route path="/about" element={<About />} /> {/* Updated to use element instead of component */}
+        <Route path="/portfolio" element={<Portfolio />} /> {/* Updated to use element instead of component */}
+      </Routes>
     </Router>
   );
 }
