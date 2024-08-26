@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../assets/path-to-your-image.jpg'; // Update with the correct path to your profile image
+import profilePic from '../assets/profilePic/profile.jpg'
 
 const Hero = () => {
   return (
