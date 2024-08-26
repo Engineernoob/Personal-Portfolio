@@ -1,6 +1,6 @@
 jsx
 import React from 'react';
-import '/home/Engineernoob/Personal-Portfolio/src/index.css';
+import '/home/Engineernoob/Personal-Portfolio/src/portfolio.css';
 
 const Portfolio = () => {
   const projects = [
