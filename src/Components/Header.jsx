@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './index.css'
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -26,8 +27,8 @@ const Header = () => {
       <nav>
         <ul>
           <li className={activeSection === 'home' ? 'active' : ''}><a href="#home">home</a></li>
-          <li className={activeSection === 'about' ? 'active' : ''}><a href="#about">about me</a></li>
-          <li className={activeSection === 'portfolio' ? 'active' : ''}><a href="#portfolio">portfolio</a></li>
+          <li className={activeSection === 'about' ? 'active' : ''}><a href="#about">about me</a></li> {/* Link to #about */}
+          <li className={activeSection === 'portfolio' ? 'active' : ''}><a href="#portfolio">portfolio</a></li> {/* Link to #portfolio */}
         </ul>
       </nav>
       <div className="logo">js</div>
