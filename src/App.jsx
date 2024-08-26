@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Header from './Components/Header'
+import Hero from './Components/HeroSection';
+import About from './Components/AboutSection';
+import Portfolio from './Components/Portfolio';
 import './index.css';  // Global styles
 
 function App() {
